@@ -1,4 +1,5 @@
 package fastfood;
+//https://github.com/joaocavalcante25/FestFoodApsoo.gitpackage fastfood;
 
 public class Pagamento {
 	
@@ -28,14 +29,14 @@ public class Pagamento {
 			System.out.println("tipo inválido");
 	}
 	
-	private boolean pagComCartao() {
+	public boolean pagComCartao() {
 		if (this.getTipoDePag().equals("Cartão"))
 			return true;
 		else 
 		return false;
 	}
 	
-	private boolean pagComQrCode() {
+	public boolean pagComQrCode() {
 		if (this.getTipoDePag().equals("QrCode"))
 			return true;
 		else 
